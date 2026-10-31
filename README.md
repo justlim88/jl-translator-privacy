@@ -1,6 +1,6 @@
 # JL Translator - Privacy Policy
 
-Last updated: 30 October 2026
+Last updated: 31 October 2026
 
 JL Translator (package app.translator.private) is a translation app by Justin Lim ("the developer"). This policy says what the app does with your camera, microphone and text.
 
@@ -13,6 +13,7 @@ The app has no accounts and no server of its own. The developer does not receive
 - Camera: when you use the camera feature, the app reads text in the camera image using Google ML Kit text recognition. In the app's code this runs on your phone. The app does not save the images.
 - Microphone: when you tap Speak, the app asks Android for on-device speech recognition only and does not fall back to online recognition. The speech recognition and text-to-speech services are provided by your phone's Android software. The developer has not tested every phone and cannot confirm what those services do on every device.
 - Translation: text you type, speak or scan is translated with Google ML Kit Translation. In the app's code, the app does not write that text to storage.
+- Summary test: The summary test uses a built-in English sample, not your meeting speech. Google ML Kit processes the sample on your phone. It may connect to Google for models and compatibility updates, and sends device, usage and performance data for diagnostics and analytics. This test does not save your audio or recognised speech.
 
 ## 3. Data collected by Google ML Kit (third-party software in the app)
 
