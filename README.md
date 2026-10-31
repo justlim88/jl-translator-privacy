@@ -11,7 +11,7 @@ The app has no accounts and no server of its own. The developer does not receive
 ## 2. What the app does on your phone
 
 - Camera: when you use the camera feature, the app reads text in the camera image using Google ML Kit text recognition. In the app's code this runs on your phone. The app does not save the images.
-- Microphone: when you tap Speak, the app asks Android for on-device speech recognition only and does not fall back to online recognition. The speech recognition and text-to-speech services are provided by your phone's Android software. The developer has not tested every phone and cannot confirm what those services do on every device.
+- Microphone: when you tap Speak, the app asks Android for on-device speech recognition only and does not fall back to online recognition. If a speech language pack is missing, the app can ask your phone's speech service to download it using the internet. Your phone may ask for approval. The phone's service handles the download, not the developer. Speech recognition remains on-device, with no online fallback. The speech recognition and text-to-speech services are provided by your phone's Android software. The developer has not tested every phone and cannot confirm what those services do on every device.
 - Translation: text you type, speak or scan is translated with Google ML Kit Translation. In the app's code, the app does not write that text to storage.
 - Summary test: The summary test uses a built-in English sample, not your meeting speech. Google ML Kit processes the sample on your phone. It may connect to Google for models and compatibility updates, and sends device, usage and performance data for diagnostics and analytics. This test does not save your audio or recognised speech.
 
@@ -21,7 +21,7 @@ The app uses Google ML Kit. Language models are downloaded to your phone over th
 
 ## 4. Permissions
 
-Camera (to read text), Microphone (for speech input), Internet and network state (used by Google ML Kit to download language models and to send the diagnostic information described in section 3).
+Camera (to read text), Microphone (for speech input), Internet and network state (used by Google ML Kit to download language models and to send the diagnostic information described in section 3, and for speech-pack download requests to your phone's speech service).
 
 ## 5. Sharing and sale
 
