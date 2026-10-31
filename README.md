@@ -14,6 +14,7 @@ The app has no accounts and no server of its own. The developer does not receive
 - Microphone: when you tap Speak, the app asks Android for on-device speech recognition only and does not fall back to online recognition. If a speech language pack is missing, the app can ask your phone's speech service to download it using the internet. Your phone may ask for approval. The phone's service handles the download, not the developer. Speech recognition remains on-device, with no online fallback. The speech recognition and text-to-speech services are provided by your phone's Android software. The developer has not tested every phone and cannot confirm what those services do on every device.
 - Translation: text you type, speak or scan is translated with Google ML Kit Translation. In the app's code, the app does not write that text to storage.
 - Summary test: The summary test uses a built-in English sample, not your meeting speech. Google ML Kit processes the sample on your phone. It may connect to Google for models and compatibility updates, and sends device, usage and performance data for diagnostics and analytics. This test does not save your audio or recognised speech.
+- Updates: When the app checks for updates, Google Play receives the app version, device metadata, and a list of installed app modules and asset packs to check update availability and size. This check does not include your speech or translated text.
 
 ## 3. Data collected by Google ML Kit (third-party software in the app)
 
